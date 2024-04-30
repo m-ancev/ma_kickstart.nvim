@@ -242,6 +242,44 @@ require('lazy').setup({
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
+  ------------------------------------------------------------------------------------------------------
+  ---Copilot Bindings:
+  --- Panel:
+  --- - :Copilot panel - open panel
+  --- - Jump to previous suggestion - [[
+  --- - Jump to next suggestion - ]]
+  --- - Accept suggestion - <CR>
+  --- - Refresh - gr
+  --- Inline:
+  --- - Accept - <M-l>
+  --- - Dismiss - <C-]>
+  ------------------------------------------------------------------------------------------------------
+  {
+    'zbirenbaum/copilot.lua',
+    cmd = 'Copilot',
+    event = 'InsertEnter',
+    build = ':Copilot auth',
+    opts = {
+      suggestion = {
+        enabled = true,
+        auto_trigger = true,
+      },
+      panel = {
+        enabled = true,
+        auto_refresh = true,
+        layout = {
+          position = 'right',
+          ratio = 0.3,
+        },
+      },
+      filetypes = {
+        ['.'] = true, -- enable all filetypes
+        -- add specific filetypes here
+      },
+    },
+  },
+  ------------------------------------------------------------------------------------------------------
+
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
