@@ -120,7 +120,7 @@ vim.opt.breakindent = true
 
 -- Save undo history
 vim.opt.undofile = true
-vim.o.undodir = "~/.local/state/nvim/undo/"
+vim.o.undodir = '~/.local/state/nvim/undo/'
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
