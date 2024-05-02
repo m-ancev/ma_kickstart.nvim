@@ -250,7 +250,7 @@ require('lazy').setup({
   --- - Accept suggestion - <CR>
   --- - Refresh - gr
   --- Inline:
-  --- - Accept - <M-l>
+  --- - Accept - <M-a>
   --- - Dismiss - <C-]>
   ------------------------------------------------------------------------------------------------------
   {
