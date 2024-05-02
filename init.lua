@@ -262,6 +262,9 @@ require('lazy').setup({
       suggestion = {
         enabled = true,
         auto_trigger = true,
+        keymap = {
+          accept = "<M-a>",
+        },
       },
       panel = {
         enabled = true,
