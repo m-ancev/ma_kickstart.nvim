@@ -78,6 +78,9 @@ vim.opt.scrolloff = 10
 --  See `:help vim.keymap.set()`
 vim.keymap.set('n', '<leader>e', ':Oil --float<CR>', { desc = 'Open Oil [E]xplorer' })
 
+vim.keymap.set('n', '<leader><Tab>', ':bnext<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader><S-Tab>', ':bprev<CR>', { noremap = true, silent = true })
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
