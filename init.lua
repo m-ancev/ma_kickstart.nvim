@@ -155,6 +155,8 @@ require('lazy').setup({
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
+  { 'pocco81/auto-save.nvim' },
+
   {
     'stevearc/oil.nvim',
     opts = {
