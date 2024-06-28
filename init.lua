@@ -107,7 +107,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Configure and install plugins
 require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
+  { 'tpope/vim-sleuth' },
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
@@ -134,6 +134,26 @@ require('lazy').setup({
       },
     },
     dependencies = { 'nvim-tree/nvim-web-devicons' },
+  },
+
+  {
+    'folke/zen-mode.nvim',
+    opts = {
+      window = {
+        backdrop = 0.95,
+        width = 100,
+        height = 1,
+        options = {
+          signcolumn = 'no',
+          number = false,
+          relativenumber = false,
+          cursorline = false,
+          cursorcolumn = false,
+          foldcolumn = '0',
+          list = false,
+        },
+      },
+    },
   },
 
   ------------------------------------------------------------------------------------------------------
