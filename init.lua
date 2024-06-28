@@ -164,6 +164,15 @@ require('lazy').setup({
   { 'pocco81/auto-save.nvim' },
 
   {
+    'iamcco/markdown-preview.nvim',
+    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+    ft = { 'markdown' },
+    build = function()
+      vim.fn['mkdp#util#install']()
+    end,
+  },
+
+  {
     'stevearc/oil.nvim',
     opts = {
       view_options = {
