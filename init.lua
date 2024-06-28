@@ -133,7 +133,9 @@ require('lazy').setup({
         show_hidden = true,
       },
       float = {
-        padding = 5,
+        padding = 0,
+        max_width = 50,
+        -- max_height = 10,
         border = 'solid',
       },
     },
