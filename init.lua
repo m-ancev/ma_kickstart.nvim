@@ -132,6 +132,10 @@ require('lazy').setup({
       view_options = {
         show_hidden = true,
       },
+      float = {
+        padding = 5,
+        border = 'solid',
+      },
     },
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
