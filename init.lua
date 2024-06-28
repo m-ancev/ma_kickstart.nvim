@@ -179,33 +179,33 @@ require('lazy').setup({
   --- - Accept - <M-a>
   --- - Dismiss - <C-]>
   ------------------------------------------------------------------------------------------------------
-  {
-    'zbirenbaum/copilot.lua',
-    cmd = 'Copilot',
-    event = 'InsertEnter',
-    build = ':Copilot auth',
-    opts = {
-      suggestion = {
-        enabled = true,
-        auto_trigger = true,
-        keymap = {
-          accept = "<M-a>",
-        },
-      },
-      panel = {
-        enabled = true,
-        auto_refresh = true,
-        layout = {
-          position = 'right',
-          ratio = 0.3,
-        },
-      },
-      filetypes = {
-        ['.'] = true, -- enable all filetypes
-        -- add specific filetypes here
-      },
-    },
-  },
+  -- {
+  --   'zbirenbaum/copilot.lua',
+  --   cmd = 'Copilot',
+  --   event = 'InsertEnter',
+  --   build = ':Copilot auth',
+  --   opts = {
+  --     suggestion = {
+  --       enabled = true,
+  --       auto_trigger = true,
+  --       keymap = {
+  --         accept = "<M-a>",
+  --       },
+  --     },
+  --     panel = {
+  --       enabled = true,
+  --       auto_refresh = true,
+  --       layout = {
+  --         position = 'right',
+  --         ratio = 0.3,
+  --       },
+  --     },
+  --     filetypes = {
+  --       ['.'] = true, -- enable all filetypes
+  --       -- add specific filetypes here
+  --     },
+  --   },
+  -- },
   ------------------------------------------------------------------------------------------------------
 
   -- Here is a more advanced example where we pass configuration
