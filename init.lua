@@ -66,6 +66,7 @@ vim.keymap.set('n', '<leader>e', ':Oil --float<CR>', { desc = 'Open Oil [E]xplor
 
 vim.keymap.set('n', '<leader><Tab>', ':bnext<CR>', { desc = 'Open buffer next', noremap = true, silent = true })
 vim.keymap.set('n', '<leader><S-Tab>', ':bprev<CR>', { desc = 'Open buffer previous', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>C', ':CopilotChatToggle<CR>', { desc = 'Toggle [C]opilotChat', noremap = true, silent = true })
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
