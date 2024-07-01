@@ -202,8 +202,29 @@ require('lazy').setup({
   --     },
   --   },
   -- },
-  ------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------
+  ---Copilot Chat
+  -------------------------------------------------------------------------------------------------
 
+  -- Here is a more advanced example where we pass configuration
+  -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
+  --    require('gitsigns').setup({ ... })
+  --
+  -- See `:help gitsigns` to understand what the configuration keys do
+  -- {
+  --   'CopilotC-Nvim/CopilotChat.nvim',
+  --   branch = 'canary',
+  --   dependencies = {
+  --     { 'zbirenbaum/copilot.lua' }, -- or github/copilot.vim
+  --     { 'nvim-lua/plenary.nvim' }, -- for curl, log wrapper
+  --   },
+  --   opts = {
+  --     debug = true, -- Enable debugging
+  --     -- See Configuration section for rest
+  --   },
+  --   -- See Commands section for default commands if you want to lazy load on them
+  -- },
+  -------------------------------------------------------------------------------------------------
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
